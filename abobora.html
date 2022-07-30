@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Cozinha da Oda!</title>
+		<style>
+			h1, h4 {
+				background-color: yellow;
+				color: white;
+				}
+			ul {
+				background-color: rgb(250,245,130);
+				color: rgb(210,200,55);
+				font-size: 18px;
+			}
+			img {
+				border:5px solid orange;
+			}
+			p {
+				text-align:center;
+			}
+		</style>
+		<script>
+			function somar (){
+				document.getElementById("resultado").value = parseFloat(document.getElementById("valor1").value) + parseFloat(document.getElementById("valor2").value);
+			}
+			function subtrair (){
+				document.getElementById("resultado").value = parseFloat(document.getElementById("valor1").value) - parseFloat(document.getElementById("valor2").value);
+			}
+			function multiplicar (){
+				document.getElementById("resultado").value = parseFloat(document.getElementById("valor1").value) * parseFloat(document.getElementById("valor2").value);
+			}
+			function dividir (){
+				document.getElementById("resultado").value = parseFloat(document.getElementById("valor1").value) / parseFloat(document.getElementById("valor2").value);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Sorvete de Banana</h1>
+		<p><video controls>
+			<source src="teste.mp4">
+		</video></p> <br>
+		<p><a href="https://www.youtube.com/watch?v=divlj_H8BE0">
+			vídeo da receita
+		</a></p>
+		<hr>
+		<h4>ingredientes</h4>
+		<ul>
+			<li>abóbora</li>
+			<li>banana nanica</li>
+			<li>leite de soja</li>
+			<li>semente de chia</li>
+		</ul>
+		<h4>temperos</h4>
+		<ul>
+			<li>canela</li>
+		</ul>
+		<hr>
+		valor 1: <input type="text" id="valor1"><br>
+		valor 2: <input type="text" id="valor2"><br>
+		<button onclick = "somar()">+</button>
+		<button onclick = "subtrair()">-</button>
+		<button onclick = "multiplicar()">x</button>
+		<button onclick = "dividir()">÷</button>
+		<br>
+		resultado: <input type="text" id="resultado"><br>
+		<p><img src="pumpkin.jpg"></p>
+		<p><text>
+		Volte sempre
+		</text></p>
+	</body>
+</html>
